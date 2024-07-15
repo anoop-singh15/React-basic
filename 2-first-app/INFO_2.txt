@@ -1,0 +1,8 @@
+npx create-react-app 2-first-app 
+    -> 
+        builds file structure in folder if ('.') is used in place of 2-first-app
+        then all module will install in current directory
+
+Components
+
+Props
