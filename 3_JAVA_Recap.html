@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Recap</title>
+</head>
+<body>
+    <h1>
+        Java Refresher
+    </h1>
+    <script>
+       " use strict";
+        console.log('java');
+       
+        //  LET AND VAR DIFFERENCE
+                let a=3333333333333333333333;
+                // we can reuse let variable with different data type
+                // let a='aaaaa';
+                var b=2222;
+                var b='aaaa'
+                console.log(a,b);
+
+        // Operators
+                // Numbers
+                // object
+                // Boolean
+                // String
+                // undefined
+                // null
+
+
+
+        // Functions and arrow function
+            function fun()
+            {
+                console.log("hello world");
+            }
+
+         
+            
+        // OBJECTS
+            let obj={
+                r:222,
+                b:2,
+                h:"sasdsads",
+                func:function myfun(num)
+                {
+                    console.log('The number is '+num);
+                }
+            };
+
+         document.addEventListener('click',()=>{
+            console.log('You clicked something');
+            // alert("hello");
+
+            let c=confirm("Are u sure");
+            console.log(c);
+
+         })   
+
+        //  This behaviour in js
+
+         function myFun2(number)
+         {
+            console.log('number is '+this);
+         }
+         myFun2();
+
+         let number=(num)=>{
+            console.log('number is '+this);
+
+         }
+         number();
+
+
+        //  Call back
+        setTimeout(() => {
+           console.log("awdwadwdwd"); 
+        }, 2000);
+        console.log("below set timeout");
+
+
+        // Promises are used in libraries like "Axios"
+
+
+
+</script>
+</body>
+</html>
