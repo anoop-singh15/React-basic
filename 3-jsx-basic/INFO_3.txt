@@ -1,0 +1,11 @@
+jsx is html with jsx
+
+uses camelcase syntax
+ 
+ class == className | for == htmlFor
+
+ function app() in app.js return only one tag that is why we use "<> </>" this contain all other tags
+ and they are called "JSX FRAGMENT"
+
+
+ 
