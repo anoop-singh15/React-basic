@@ -1,0 +1,11 @@
+Contains basics of server and client model of react that is react creates single page website , it does not require page reloding 
+React saves bandwidth thus reducing load on website
+
+
+node modules can be deleted and can be recovered by typing "npm i"
+
+Bootstap
+
+getBootstrap.com
+
+add css and js scriptin app.jss
