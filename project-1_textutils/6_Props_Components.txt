@@ -1,0 +1,32 @@
+In Props and components we study about 
+
+###### 1> Module export
+ which are of 2 types Named export and default export  a demo file is present with name 6_module1.mjs
+
+######## 2> COMPONENTS
+
+ In this we made an component folder in src folder which contain  App js
+ Now in this component folder suppose we want to add feature in Navbar so make an (starting capital Letter) "Navbar.js" file in which we type ""{rfc}""
+
+Add this componet in App.js file {" <Navbar></Navbar> "} -> "<Navbar/>"
+
+
+######### 3> PROPS
+
+These are variable passed in components  which are caught at Navbar.js as (Props)
+
+proptypes are used to put constraints so that we do not send different type of variable then required
+
+a> first type in Navbar.js == > (impt)
+b> then apply constraints == > Navbar.propTypes
+
+this help to catch error when we send object in place of string 
+
+####### 4> DEFAULT PROPS
+
+these are used when we do not pass any value but make a variable in NAVBAR.js (props.title)
+
+
+####### 5> Use of   {"isRequired"} in propTypes
+give warning in console  of browser
+
