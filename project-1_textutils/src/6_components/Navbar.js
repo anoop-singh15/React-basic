@@ -27,7 +27,7 @@ export default function Navbar(props) {
               <li><a classNameName="dropdown-item" href="/">Something else here</a></li>
             </ul>
           </li> */}
-          <li classNameName="nav-item">
+          <li className="nav-item">
             <a className="nav-link disabled" aria-disabled="true">Contact Us</a>
           </li>
         </ul>

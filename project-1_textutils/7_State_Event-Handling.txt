@@ -1,0 +1,17 @@
+uppercasing text inside text area 
+
+Make a form component in component folder
+
+type rfc -> react function based component
+
+state is how component is present in web page
+
+#####  HOOK
+allow us to use state and feature of react without writing a class
+
+import React,{useState} from 'react';
+
+setText() update txt
+
+onChange will always run this will provide event and handling this envent is event handling
+
