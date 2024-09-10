@@ -1,0 +1,10 @@
+Number of words number of character
+
+Reading speed
+
+Preview feature
+
+basic  css for bootstrap
+
+light -> dark in className of Navbar component nav tag
+button in className primary->success (primary blue in bootstrap)
