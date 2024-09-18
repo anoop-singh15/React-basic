@@ -1,0 +1,3 @@
+type rfc in about.js component
+
+$0.style.backgroundColor='red' enter this in console to set this propety in 'selected tag' in chrome
