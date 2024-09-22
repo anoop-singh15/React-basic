@@ -1,0 +1,5 @@
+made an state in app.js
+
+use {imrs} to import reat state
+
+one curly brace to write js and {{}} to write object in js

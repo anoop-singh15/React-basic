@@ -50,10 +50,10 @@ export default function
     return (
         <>
          <div>
-            <div className="mb-3">
-                <h1>{props.heading} </h1>
+            <div className="mb-3" style={{color:props.mode==='light'?'black':'white'}}>
+                <h1 style={{color:props.mode==='light'?'black':'white'}}>{props.heading} </h1>
 
-                <textarea className="form-control" value={text} onChange={handleOnChange} id="box" rows="9"></textarea>
+                <textarea className="form-control" value={text} style={{backgroundColor:props.mode==='light'?'white':'grey',color:props.mode==='light'?'black':'white'}} onChange={handleOnChange} id="box" rows="9"></textarea>
             </div>
            
             <button className="btn btn-primary" onClick={handleUppercase}>Uppercase</button>
@@ -64,7 +64,7 @@ export default function
             {/* <button className="btn btn-primary mx-2" onClick={handleLanguageChange}>Translate</button> */}
         </div>
         
-        <div className="container my-2">
+        <div className="container my-2" style={{color:props.mode==='light'?'black':'white'}}>
             <h2>
                 Text Summary
             </h2>
@@ -73,7 +73,7 @@ export default function
             <h2>
                 Preview
             </h2>
-            <p>{text}</p>
+            <p>{text.length>0?text:"Enter Your text here"}</p>
         </div>
 
         </>
