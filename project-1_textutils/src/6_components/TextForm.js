@@ -32,6 +32,18 @@ export default function
             word.voice =voice[21];
             speechSynthesis.speak(word);
         }
+        // copy content to clipboard 
+        const handleCopy=()=>{
+            var text=document.getElementById('box');
+            text.select();
+            navigator.clipboard.writeText(text.value);
+        }
+
+        // Remove extra space 
+        const handleExtraSpace=()=>{ 
+            let newText=text.split(/[ ]+/);
+            setText(newText.join(" "));
+        }
 
      
 
@@ -47,6 +59,8 @@ export default function
             <button className="btn btn-primary" onClick={handleUppercase}>Uppercase</button>
             <button className="btn btn-primary mx-2" onClick={handleLowercase}>Lowercase</button>
             <button className="btn btn-primary mx-2" onClick={Text_To_Speech}>Text-to-Speech</button>
+            <button className="btn btn-primary mx-2" onClick={handleCopy}>CopyClipboard</button>
+            <button className="btn btn-primary mx-2" onClick={handleExtraSpace}>RemoveExtraSpace</button>
             {/* <button className="btn btn-primary mx-2" onClick={handleLanguageChange}>Translate</button> */}
         </div>
         
