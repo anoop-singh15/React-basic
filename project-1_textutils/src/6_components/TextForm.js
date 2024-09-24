@@ -13,11 +13,13 @@ export default function
         const handleUppercase=()=>{
             console.log("uppercase clicked "+text)
             setText(text.toUpperCase()  );
+            props.showAlert("Text is converted to uppercase","success");
            
         }
         const handleLowercase=()=>{
             console.log("uppercase clicked "+text)
             setText(text.toLowerCase() );
+            props.showAlert("Text is converted to Lowercase","success");
            
         }
 

@@ -1,0 +1,7 @@
+rfce -- react function component
+
+in alert.js 
+
+make alert disappear after some time
+
+and we also solved problem of null by using syntax ("props.alert &&")
