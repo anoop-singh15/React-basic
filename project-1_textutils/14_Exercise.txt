@@ -1,0 +1,8 @@
+2 Pending task
+
+1st task
+Make color theme in project textutils
+and change color of button with respect to button
+
+2nd task (Bug Fixing)
+Make word counter to 0 at begin using js logic

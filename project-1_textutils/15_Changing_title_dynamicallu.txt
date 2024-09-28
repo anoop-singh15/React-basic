@@ -1,0 +1,3 @@
+Fixing title and favicon
+
+favicon generator
