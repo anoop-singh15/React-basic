@@ -1,0 +1,9 @@
+npm i react-router-dom
+
+use switch inside router for routing
+
+
+exact keyword is used in router because if if we have 2 routes
+/users  --- first path
+/users/home   ---  second path
+then if exact if not used instead of routing to 2nd path react will route to first path

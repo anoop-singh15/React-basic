@@ -7,6 +7,18 @@ import About from './6_components/About';
 import { useState } from 'react';
 import Alert from './6_components/Alert';
 
+
+
+// Most important react routing
+import{
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
+
+
 // let a = "REACT";
 function App() {
   const [mode,setMode]=useState('light');
@@ -61,16 +73,34 @@ function App() {
   
   return (
     <>
+
+    <Router>
+
      <Navbar title="TextUtils" About="About Us" mode={mode} toggleMode={toggleMode}/>
      <Alert alert={alert}/>
      {/* <Navbar /> */}
 
      {/* Changes in 7-state and event handling */}
      <div className="container">
-     <TextForm heading="Text to Analyze" mode={mode} showAlert={showAlert}/>
-     <About/>
 
-     </div>
+
+      {/* Switch for routing */}
+      <Switch>
+        <Route exact path='/about'>
+          <About/>
+        </Route>
+       
+        <Route exact path='/'>
+            <TextForm heading="Text to Analyze" mode={mode} showAlert={showAlert}/>
+        </Route>
+      </Switch>
+      </div>
+      </Router>
+
+     {/* <TextForm heading="Text to Analyze" mode={mode} showAlert={showAlert}/> */}
+     {/* <About/> */}
+
+    
 
     </>
   );
